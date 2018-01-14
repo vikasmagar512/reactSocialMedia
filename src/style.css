@@ -1,0 +1,15 @@
+span {
+    color: #337ab7;
+    text-decoration: none;
+}
+a, span{
+    cursor: pointer;
+}
+
+.home-container {
+    margin-top: 5%;
+}
+.router-link {
+    float: right;
+    margin-top: 1%;
+}
