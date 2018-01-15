@@ -1,7 +1,12 @@
-# simple-react-social-media
+# react-social-media
 
-# Getting started
+README
 
-1. `npm install`.
-2. `npm start`.
-2. `http://localhost:3000/`
+1. Clone repository on your local machine
+2. npm install
+
+To run app-
+
+1. npm run build (to bundle all your changes)
+2. npm start (to start the server)
+3. goto http://localhost:8080

@@ -1,48 +1,39 @@
 {
-  "name": "simple-react-jest-webpack",
+  "name": "React-hello-world-example",
   "version": "1.0.0",
-  "author": "Lars Krieger",
-  "description": "Simple Webpack dev server, running react and tests with jest",
-  "license": "MIT",
-  "main": "webpack.config.js",
+  "description": "This is a basic example using reactjs.",
+  "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:dev": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "start": "webpack-dev-server",
-    "build": "jest && webpack -p"
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
-  "jest": {
-    "verbose": true,
-    "transform": {
-      ".js": "./node_modules/babel-jest"
-    }
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/upasanaa/react-hello-world-example.git"
+  },
+  "keywords": [],
+  "author": "UpasanaK",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.20.1",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.32.0",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-core": "^6.23.1",
-    "babel-jest": "^19.0.0",
-    "babel-loader": "^6.3.2",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-react": "^6.23.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-15": "^1.0.5",
-    "html-webpack-plugin": "^2.28.0",
-    "jest": "^19.0.2",
-    "react-test-renderer": "^15.4.2",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1"
-  },
-  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "dotenv": "^4.0.0",
-    "moment": "^2.20.1",
-    "react": "^15.6.2",
-    "react-bootstrap": "^0.32.0",
-    "react-dom": "^15.6.2",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2"
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }

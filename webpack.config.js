@@ -1,23 +1,28 @@
-const path = require('path');
-const webpack = require('webpack');
-require('dotenv').config();
-
-const config = require('./bin/config');
 
 module.exports = {
-  context: path.resolve(__dirname, './src'),
-  entry: {
-    /*
-      For Code splitting add:
-      otherFile: './otherFile.js'
-    */
-    app: './app.js'
-  },
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: '[name].bundle.js',
-  },
-  devServer: config.devServer,
-  module: config.module,
-  plugins: config.plugins
+    entry: ['./src/index.js'],
+    output: {
+        path: __dirname + '/build',
+        filename: 'bundle.js'
+
+    },
+    devtool: 'source-map',
+
+    module: {
+        loaders: [
+            {
+                loader: 'babel-loader',
+                test: /\.js$/,
+                exclude: /node_modules/
+            }
+        ]
+    },
+
+    stats: {
+        errorDetails: true
+    },
+
+    devServer: {
+    historyApiFallback: true,
+  }
 };

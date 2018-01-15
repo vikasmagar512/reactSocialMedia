@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>React App</title>
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyA4IgEIl1FYR1lvVtM1mk6xgz7mKNQBNDE",
+            authDomain: "test-a24ef.firebaseapp.com",
+            databaseURL: "https://test-a24ef.firebaseio.com",
+            projectId: "test-a24ef",
+            storageBucket: "test-a24ef.appspot.com",
+            messagingSenderId: "919604276093"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+    <div id='app'></div>
+    <script type="text/javascript" src="build/bundle.js"></script>
+</body>
+</html>
