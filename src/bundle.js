@@ -36983,6 +36983,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */
 
 
+var GITHUB = 'github';
+
 var Home = function (_React$Component) {
     _inherits(Home, _React$Component);
 
@@ -36992,35 +36994,66 @@ var Home = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
 
         _this.state = {
-            isActive: false
+            isActive: false,
+
+            isAuthenticated: false, user: null, token: ''
         };
         _this.handleButtonClick = _this.handleButtonClick.bind(_this);
         _this.navigateToHome = _this.navigateToHome.bind(_this);
+
         return _this;
     }
 
     _createClass(Home, [{
+        key: 'onSuccess',
+        value: function onSuccess(response) {
+            var _this2 = this;
+
+            var token = response.headers.get('x-auth-token');
+            response.json().then(function (user) {
+                if (token) {
+                    _this2.setState({ isAuthenticated: true, user: user, token: token });
+                }
+            });
+        }
+    }, {
+        key: 'onFailed',
+        value: function onFailed(error) {
+            alert(error);
+        }
+    }, {
+        key: 'logout',
+        value: function logout() {
+            this.setState({ isAuthenticated: false, token: '', user: null });
+        }
+    }, {
         key: 'handleButtonClick',
         value: function handleButtonClick() {
-            var provider = new firebase.auth.GithubAuthProvider();
-            provider.addScope('repo');
-            provider.setCustomParameters({
-                'allow_signup': 'false'
-            });
-            var that = this;
+            var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : GITHUB;
 
-            firebase.auth().signInWithPopup(provider).then(function (result) {
-                // This gives you a GitHub Access Token. You can use it to access the GitHub API.
-                var token = result.credential.accessToken;
-                var user = result.user;
-                that.navigateToHome(result);
-            }).catch(function (error) {
-                // Handle Errors here.
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                var email = error.email;
-                var credential = error.credential;
-            });
+            if (type === GITHUB) {
+                var provider = new firebase.auth.GithubAuthProvider();
+                provider.addScope('repo');
+                provider.setCustomParameters({
+                    'allow_signup': 'false'
+                });
+                var that = this;
+
+                firebase.auth().signInWithPopup(provider).then(function (result) {
+                    // This gives you a GitHub Access Token. You can use it to access the GitHub API.
+                    var token = result.credential.accessToken;
+                    var user = result.user;
+                    that.navigateToHome(result);
+                }).catch(function (error) {
+                    // Handle Errors here.
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                    var email = error.email;
+                    var credential = error.credential;
+                });
+            } else {
+                alert('twitter');
+            }
         }
     }, {
         key: 'navigateToHome',
@@ -37033,7 +37066,33 @@ var Home = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
-            var _this2 = this;
+            var _this3 = this;
+
+            var content = !!this.state.isAuthenticated ? _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Authenticated'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    this.state.user.email
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'button',
+                        { onClick: this.logout, className: 'button' },
+                        'Log out'
+                    )
+                )
+            ) : _react2.default.createElement(TwitterLogin, { loginUrl: 'http://localhost:8080/api/v1/auth/twitter',
+                onFailure: this.onFailed, onSuccess: this.onSuccess,
+                requestTokenUrl: 'http://localhost:4000/api/v1/auth/twitter/reverse' });
 
             return _react2.default.createElement(
                 _reactBootstrap.Grid,
@@ -37048,9 +37107,21 @@ var Home = function (_React$Component) {
                 _react2.default.createElement(
                     _reactBootstrap.Button,
                     { bsStyle: 'primary', onClick: function onClick() {
-                            return _this2.handleButtonClick();
+                            return _this3.handleButtonClick(GITHUB);
                         } },
                     'GitHub Login'
+                ),
+                _react2.default.createElement(
+                    _reactBootstrap.Button,
+                    { bsStyle: 'primary', onClick: function onClick() {
+                            return _this3.handleButtonClick('twitter');
+                        } },
+                    'Twitter Login'
+                ),
+                _react2.default.createElement(
+                    _reactBootstrap.Panel,
+                    { className: 'App' },
+                    content
                 )
             );
         }
