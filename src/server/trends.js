@@ -53,6 +53,7 @@ function fullTweetPath(query) {
 
 callTwitter(trendOptions, function(trendsArray) {
 	fullTweetPath(trendsArray[0].trends.query)
+	console.log(`here tweetDetails ${tweetDetails}` )
 	callTwitter(tweetDetails.options, function(tweetObj) {
 		tweetObj.statuses.forEach(function(tweet) {
 			console.log('\n' + tweet.user.screen_name + ' : ' + tweet.text);

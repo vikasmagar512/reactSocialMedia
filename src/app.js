@@ -5,6 +5,7 @@ import {RepositoryComponent} from './component/repositoryComponent';
 import {RepositoryDetailsComponent} from './component/repositoryDetailsComponent';
 import {CommitsComponent} from './component/commitsComponent';
 import {CommitsDetailsComponent} from './component/commitsDetailsComponent';
+import {TwitterMainComponent} from './component/twitterMain';
 
 class App extends Component {
     render() {
@@ -16,6 +17,15 @@ class App extends Component {
                     <Route path='/repositorydetails' component={RepositoryDetailsComponent}/>
                     <Route path='/commits' component={CommitsComponent}/>
                     <Route path='/commitdetails' component={CommitsDetailsComponent}/>
+
+                    <Route path='/twitter' component={TwitterMainComponent}/>
+{/*
+                    <Route path='/twitter/trends' component={TrendsComponent}/>
+                    <Route path='/twitter/hashtags' component={HashTagsComponent}/>
+                    <Route path='/twitter/collections' component={CollectionsComponent}/>
+                    <Route path='/twitter/collections/:id' component={CollectionsDetailsComponent}/>
+*/}
+
                     <Route component={NotFound} />
                 </Switch>
             </BrowserRouter>

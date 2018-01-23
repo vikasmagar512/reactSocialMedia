@@ -1,0 +1,47 @@
+
+
+{
+ "kind": "identitytoolkit#GetAccountInfoResponse",
+ "users": [
+  {
+   "localId": "eRgS3CUFoRWXbfPKyaJ7cBgpjwL2",
+   "displayName": "vikasmagar",
+   "providerUserInfo": [
+    {
+     "providerId": "twitter.com",
+     "displayName": "vikasmagar",
+     "photoUrl": "https://pbs.twimg.com/profile_images/631490340860489730/lOdDFQgO_normal.jpg",
+     "federatedId": "3236792029",
+     "rawId": "3236792029",
+     "screenName": "Vikas_R_Magar"
+    }
+   ],
+   "photoUrl": "https://pbs.twimg.com/profile_images/631490340860489730/lOdDFQgO_normal.jpg",
+   "validSince": "1516019692",
+   "lastLoginAt": "1516617775000",
+   "createdAt": "1516019692000",
+   "screenName": "Vikas_R_Magar"
+  }
+ ]
+}
+
+{
+ "kind": "identitytoolkit#VerifyAssertionResponse",
+ "federatedId": "http://twitter.com/3236792029",
+ "providerId": "twitter.com",
+ "localId": "eRgS3CUFoRWXbfPKyaJ7cBgpjwL2",
+ "emailVerified": false,
+ "oauthAccessToken": "3236792029-D6hUPyj8Ur1pws9qHXNcx8qGbpo31jMPdos6iGH",
+ "oauthTokenSecret": "g2AdtMH3JnXiXApNc1SlEHQLbwS7QcDCURnj62kARnWGA",
+ "fullName": "vikasmagar",
+ "displayName": "vikasmagar",
+ "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhhNjAyYmVjM2ZlY2U2MzI5Y2FmOGIwZTY1MDkzYWZiMTM0NDRlZWMifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vdmlrYXNjaGV0YW5yZWFjdHR3aXR0ZXIiLCJuYW1lIjoidmlrYXNtYWdhciIsInBpY3R1cmUiOiJodHRwczovL3Bicy50d2ltZy5jb20vcHJvZmlsZV9pbWFnZXMvNjMxNDkwMzQwODYwNDg5NzMwL2xPZERGUWdPX25vcm1hbC5qcGciLCJhdWQiOiJ2aWthc2NoZXRhbnJlYWN0dHdpdHRlciIsImF1dGhfdGltZSI6MTUxNjYxNzc3NSwidXNlcl9pZCI6ImVSZ1MzQ1VGb1JXWGJmUEt5YUo3Y0JncGp3TDIiLCJzdWIiOiJlUmdTM0NVRm9SV1hiZlBLeWFKN2NCZ3Bqd0wyIiwiaWF0IjoxNTE2NjE3Nzc1LCJleHAiOjE1MTY2MjEzNzUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsidHdpdHRlci5jb20iOlsiMzIzNjc5MjAyOSJdfSwic2lnbl9pbl9wcm92aWRlciI6InR3aXR0ZXIuY29tIn19.U9aXfZD3qJRO051dPAUQ43Mr1tpDBuZgFk9gsjtO8fZnliL5sLa68DaNJE3WBk9gZYNEHDcMCsx9mjNB6QOE2nGFE2y0epvqpNybwvDTh7m9Z6V3AzAl5vZXkq4wDqSz6V9IZ0RTgm4ugTE95468q7YdbfOxZNhIU43afTf8o2lmM-bQbKgeALBygVdRY37F27JXZu5n-fDb8cSsKXZ1tKiHejPaJu6IyjhmmFU3wLNzrENTT5svnOd0bIvAOraVSPBgK2spPY8CwY0rChyyoLsWnL1OEwr8jwc3HlK2mHDftRvlpNuwZWNk1Ry1Sd9mw39ReYjNP5YwBaWIc0Q0gw",
+ "language": "en",
+ "timeZone": "Pacific Time (US & Canada)",
+ "photoUrl": "https://pbs.twimg.com/profile_images/631490340860489730/lOdDFQgO_normal.jpg",
+ "context": "",
+ "refreshToken": "AEoYo8tDiWgTKb2sUuAWsEar2ZQehGUuXEBpZYpqlYv0TrpIwQcCVQfcnmlpqkY-uKTcx__dal8-A0URBZ7aVsMpOuxtU_QzVytjnHOWgj27LFGXzNDmvauz7jBChGi3iRWXuGWHErrPxQAfpWL1eg5dk5LtYWLrLAueI4wATWTiO302Tg2ElH8zORFUM_A15E4K_nh2EgkxwyoiqFC7MpS6hcDDXBTQyKiPUFcGN4i3t2dY1-3rU3pGZ_NzSBy1owhFtSRsC7WQehLCxUGy6-56_G3MnsCBkPGUhzMkAbZBJZz_xbqEEBLqafvZB5lKH2zhKJd_-GiawF1vrvUdmo7ZZdMKsiUx5A",
+ "expiresIn": "3600",
+ "screenName": "Vikas_R_Magar",
+ "rawUserInfo": "{\"utc_offset\":-28800,\"friends_count\":74,\"profile_image_url_https\":\"https://pbs.twimg.com/profile_images/631490340860489730/lOdDFQgO_normal.jpg\",\"listed_count\":0,\"profile_background_image_url\":\"http://abs.twimg.com/images/themes/theme1/bg.png\",\"default_profile_image\":false,\"favourites_count\":30,\"description\":\"\",\"created_at\":\"Fri Jun 05 07:50:40 +0000 2015\",\"is_translator\":false,\"profile_background_image_url_https\":\"https://abs.twimg.com/images/themes/theme1/bg.png\",\"protected\":false,\"screen_name\":\"Vikas_R_Magar\",\"id_str\":\"3236792029\",\"profile_link_color\":\"FFCC4D\",\"is_translation_enabled\":false,\"translator_type\":\"none\",\"id\":3236792029,\"geo_enabled\":false,\"profile_background_color\":\"000000\",\"lang\":\"en\",\"has_extended_profile\":false,\"profile_sidebar_border_color\":\"000000\",\"profile_text_color\":\"000000\",\"verified\":false,\"profile_image_url\":\"http://pbs.twimg.com/profile_images/631490340860489730/lOdDFQgO_normal.jpg\",\"time_zone\":\"Pacific Time (US \\u0026 Canada)\",\"url\":null,\"contributors_enabled\":false,\"profile_background_tile\":false,\"profile_banner_url\":\"https://pbs.twimg.com/profile_banners/3236792029/1439394082\",\"entities\":{\"description\":{\"urls\":[]}},\"statuses_count\":8,\"follow_request_sent\":false,\"followers_count\":23,\"profile_use_background_image\":false,\"default_profile\":false,\"following\":false,\"name\":\"vikasmagar\",\"location\":\"Earth\",\"profile_sidebar_fill_color\":\"000000\",\"notifications\":false,\"status\":{\"in_reply_to_status_id_str\":null,\"in_reply_to_status_id\":null,\"possibly_sensitive\":false,\"coordinates\":null,\"created_at\":\"Mon Jan 16 18:52:08 +0000 2017\",\"truncated\":false,\"in_reply_to_user_id_str\":null,\"source\":\"\\u003ca href\\u003d\\\"http://twitter.com\\\" rel\\u003d\\\"nofollow\\\"\\u003eTwitter Web Client\\u003c\\/a\\u003e\",\"retweet_count\":0,\"retweeted\":false,\"geo\":null,\"in_reply_to_screen_name\":null,\"is_quote_status\":false,\"entities\":{\"urls\":[{\"display_url\":\"quora.com/Do-Hindus-livi\\u2026\",\"indices\":[110,133],\"expanded_url\":\"https://www.quora.com/Do-Hindus-living-in-Muslim-majority-areas-in-India-face-any-problems-or-do-they-live-normally/answer/Vikas-Magar-3?srid\\u003ddvA1\",\"url\":\"https://t.co/U169Sjs0Rd\"}],\"hashtags\":[],\"user_mentions\":[],\"symbols\":[]},\"id_str\":\"821067530768773120\",\"in_reply_to_user_id\":null,\"favorite_count\":0,\"id\":821067530768773120,\"text\":\"Do Hindus living in Muslim majority areas in India face any problems or do they live normally? by Vikas Magar https://t.co/U169Sjs0Rd\",\"place\":null,\"contributors\":null,\"lang\":\"en\",\"favorited\":false}}"
+}

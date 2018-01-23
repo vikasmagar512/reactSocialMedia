@@ -1,0 +1,48 @@
+
+
+{
+ "kind": "identitytoolkit#GetAccountInfoResponse",
+ "users": [
+  {
+   "localId": "zBTkfl5mccbwH4CBuGsH6InS8iH3",
+   "displayName": "VIKAS MAGAR",
+   "providerUserInfo": [
+    {
+     "providerId": "twitter.com",
+     "displayName": "VIKAS MAGAR",
+     "photoUrl": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+     "federatedId": "2860784660",
+     "rawId": "2860784660",
+     "screenName": "vikasmagar1993"
+    }
+   ],
+   "photoUrl": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+   "validSince": "1516690170",
+   "lastLoginAt": "1516690170000",
+   "createdAt": "1516690170000",
+   "screenName": "vikasmagar1993"
+  }
+ ]
+}
+
+
+{
+ "kind": "identitytoolkit#VerifyAssertionResponse",
+ "federatedId": "http://twitter.com/2860784660",
+ "providerId": "twitter.com",
+ "localId": "zBTkfl5mccbwH4CBuGsH6InS8iH3",
+ "emailVerified": false,
+ "oauthAccessToken": "2860784660-OWgKSASFYpDHcoqYE2VtSkCUFZCIRvEeM8Nopz9",
+ "oauthTokenSecret": "IBYxcUyKVjdDcDhJRyLJj7DTzbza3BqaLmNSDP5F0QbZ7",
+ "fullName": "VIKAS MAGAR",
+ "displayName": "VIKAS MAGAR",
+ "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBkMmI2ZTZiM2I0NTlhZDdlOTQxZTJiYjQzZTNlMmRlMmY2YTYyZGQifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vdmlrYXNjaGV0YW5yZWFjdHR3aXR0ZXIiLCJuYW1lIjoiVklLQVMgTUFHQVIiLCJwaWN0dXJlIjoiaHR0cHM6Ly9hYnMudHdpbWcuY29tL3N0aWNreS9kZWZhdWx0X3Byb2ZpbGVfaW1hZ2VzL2RlZmF1bHRfcHJvZmlsZV9ub3JtYWwucG5nIiwiYXVkIjoidmlrYXNjaGV0YW5yZWFjdHR3aXR0ZXIiLCJhdXRoX3RpbWUiOjE1MTY2OTAxNzAsInVzZXJfaWQiOiJ6QlRrZmw1bWNjYndINENCdUdzSDZJblM4aUgzIiwic3ViIjoiekJUa2ZsNW1jY2J3SDRDQnVHc0g2SW5TOGlIMyIsImlhdCI6MTUxNjY5MDE3MCwiZXhwIjoxNTE2NjkzNzcwLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7InR3aXR0ZXIuY29tIjpbIjI4NjA3ODQ2NjAiXX0sInNpZ25faW5fcHJvdmlkZXIiOiJ0d2l0dGVyLmNvbSJ9fQ.C_2pZB9nu7ZvhIgky1yigfDkJN9VNJC0ozLZTiepHQUvTgwKvCQLZjk1eaX5M-TWf4JxJ0ylDnidgCS2xFIqJjv2y_Wm6uF-IuRGGtyItEZ89lFPJwKw-T-g3jfz0C5Cezd5i5VnhU4j8MmnaNA9P3JDknwDIBdtbmjw6hMWThnWLleRFxkq852dUKnDvi_-9J4STMkBKxAXNNLJSLuNrJYRJQvI3xdSyF0JE9kXA2Ru1RxqXHU-03eL0qNw4fIR6ylDHMP059kFDZhjD5BO2_oN0iomFGcIJgVSL1PwAbK8azC732DMEDHkpbTdo4cKd9DiVhFOJcAHJbHKXv-nMQ",
+ "language": "en",
+ "photoUrl": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+ "context": "",
+ "refreshToken": "AEoYo8uaSMaiQjGTV9iW_6Xu8vnlyIonnj_Y6zCcIvUj-rEsDqHwAs6fbZZkfENOfmBm86SehV5w8MPm5IzE1ngZEmK8Ac6cNttr8qQSoax5GIv3qgAbI6o1nDn10kO20cbSTPfxKi1Se9KT5Ppj3HgrICliGYaHfqOrHiu2bojJrChkkXptYkDTlrD0oRjgZSTN_eOhW53jsygFPFUivEf6nilj-gSV7cRkTmvhm-x0-F5u31CgSl6kVv_hVbVR_fSWxkVqBAqc_sMsinnZYXCJmSboX5nLw5OHkp0cCmgzrNwjh0xcUDMgX5yiDEILi-jgY2edUKDyHo2acUy8JI6Rn2UT9zqXEA",
+ "expiresIn": "3600",
+ "screenName": "vikasmagar1993",
+ "rawUserInfo": "{\"utc_offset\":null,\"friends_count\":31,\"profile_image_url_https\":\"https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png\",\"listed_count\":0,\"profile_background_image_url\":\"http://abs.twimg.com/images/themes/theme1/bg.png\",\"default_profile_image\":true,\"favourites_count\":0,\"description\":\"\",\"created_at\":\"Fri Oct 17 16:55:25 +0000 2014\",\"is_translator\":false,\"profile_background_image_url_https\":\"https://abs.twimg.com/images/themes/theme1/bg.png\",\"protected\":false,\"screen_name\":\"vikasmagar1993\",\"id_str\":\"2860784660\",\"profile_link_color\":\"1DA1F2\",\"is_translation_enabled\":false,\"translator_type\":\"none\",\"id\":2860784660,\"geo_enabled\":false,\"profile_background_color\":\"C0DEED\",\"lang\":\"en\",\"has_extended_profile\":false,\"profile_sidebar_border_color\":\"C0DEED\",\"profile_text_color\":\"333333\",\"verified\":false,\"profile_image_url\":\"http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png\",\"time_zone\":null,\"url\":null,\"contributors_enabled\":false,\"profile_background_tile\":false,\"entities\":{\"description\":{\"urls\":[]}},\"statuses_count\":1,\"follow_request_sent\":false,\"followers_count\":22,\"profile_use_background_image\":true,\"default_profile\":true,\"following\":false,\"name\":\"VIKAS MAGAR\",\"location\":\"\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"notifications\":false,\"status\":{\"in_reply_to_status_id_str\":null,\"in_reply_to_status_id\":null,\"coordinates\":null,\"created_at\":\"Fri Oct 17 16:55:25 +0000 2014\",\"truncated\":false,\"in_reply_to_user_id_str\":null,\"source\":\"\\u003ca href\\u003d\\\"http://twitter.com\\\" rel\\u003d\\\"nofollow\\\"\\u003eTwitter Web Client\\u003c\\/a\\u003e\",\"retweet_count\":0,\"retweeted\":false,\"geo\":null,\"in_reply_to_screen_name\":null,\"is_quote_status\":false,\"entities\":{\"urls\":[],\"hashtags\":[],\"user_mentions\":[{\"indices\":[3,19],\"screen_name\":\"45e5b7abb1874a9\",\"id_str\":\"2858269806\",\"name\":\"Vikram Gawali\",\"id\":2858269806}],\"symbols\":[]},\"id_str\":\"523155333519138816\",\"in_reply_to_user_id\":null,\"favorite_count\":0,\"id\":523155333519138816,\"text\":\"Hi @45e5b7abb1874a9.\",\"place\":null,\"contributors\":null,\"lang\":\"und\",\"favorited\":false}}",
+ "isNewUser": true
+}

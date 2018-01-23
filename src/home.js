@@ -6,6 +6,7 @@ import {withRouter} from 'react-router-dom'
 import {Button, Grid, Panel} from 'react-bootstrap';
 
 const GITHUB = 'github';
+const TWITTER = 'twitter';
 class Home extends React.Component {
     constructor (props) {
         super(props);
@@ -31,8 +32,12 @@ class Home extends React.Component {
 
         firebase.auth().signInWithPopup(provider).then(function(result) {
             let token = result.credential.accessToken;
-        // var secret = result.credential.secret;
+            // var secret = result.credential.secret;
             let user = result.user;
+            if(type!==GITHUB){
+                debugger
+                result.acc = TWITTER
+            }
             that.navigateToHome(result)
         }).catch(function(error) {
             // Handle Errors here.
@@ -46,8 +51,15 @@ class Home extends React.Component {
         debugger
         const data = JSON.stringify(result);
         console.log(data)
-        localStorage.setItem('firebaseAuthResponse', data);
-        this.props.history.push('/repository');
+        debugger
+        if(result.acc === TWITTER){
+            debugger
+            localStorage.setItem('firebaseAuthResponseTwitter', data);
+            this.props.history.push('/twitter');
+        }else{
+            localStorage.setItem('firebaseAuthResponse', data);
+            this.props.history.push('/repository');
+        }
     }
     render() {
 
