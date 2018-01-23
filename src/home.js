@@ -37,6 +37,8 @@ class Home extends React.Component {
             if(type!==GITHUB){
                 debugger
                 result.acc = TWITTER
+                result.oauth_token = 'eV2ETQwZw7qQZwev6bCuTgGM0'
+                result.consumerSecretKey = 'qN2xFUqlS4rbLws2phGPiOhjTkYEJumsRfXH3P28cAAenxgdX8'
             }
             that.navigateToHome(result)
         }).catch(function(error) {
@@ -70,7 +72,7 @@ class Home extends React.Component {
                     Click Button below to proceed...
                 </Panel>
                 <Button bsStyle='primary' onClick={() => this.handleButtonClick(GITHUB)}>Login</Button>
-                <Button bsStyle='primary' onClick={() => this.handleButtonClick('twitter')}>Twitter Login</Button>
+                <Button bsStyle='primary' onClick={() => this.handleButtonClick(TWITTER)}>Twitter Login</Button>
 
             </Grid>
         )

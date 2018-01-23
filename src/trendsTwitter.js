@@ -39,7 +39,7 @@ function jsonHandler(response, callback) {
             callback(JSON.parse(json));
         });
     } else {
-        console.log('Error : ' + reseponse.statusCode);
+        console.log('Error : ' + response.statusCode);
     }
 }
 

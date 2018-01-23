@@ -13,6 +13,7 @@ export class RepositoryComponent extends Component {
       isRepositoryEmpty: true,
       showEmpty: false
     };
+
     this.getRepositoryList = this.getRepositoryList.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }

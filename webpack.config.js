@@ -2,7 +2,8 @@
 module.exports = {
     entry: ['./src/index.js'],
     output: {
-        path: __dirname + '/build',
+        path: __dirname + '/src',
+        // path: __dirname + '/build',
         filename: 'bundle.js'
 
     },
@@ -14,6 +15,11 @@ module.exports = {
                 loader: 'babel-loader',
                 test: /\.js$/,
                 exclude: /node_modules/
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: ['babel-loader', 'eslint-loader']
             }
         ]
     },
@@ -23,6 +29,6 @@ module.exports = {
     },
 
     devServer: {
-    historyApiFallback: true,
-  }
+        historyApiFallback: true,
+      }
 };
