@@ -14,6 +14,7 @@ export class TwitterTrendsComponent extends Component {
     getCommits(result) {
         const loogedInUserName = localStorage.getItem('userName');
         const selectedRepo = localStorage.getItem('repository');
+
         const userRepoCommitsApi = `https://api.github.com/repos/${loogedInUserName}/${selectedRepo}/commits`;
         const main = this;
         fetch(userRepoCommitsApi)

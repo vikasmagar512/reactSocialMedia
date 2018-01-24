@@ -20,6 +20,7 @@ export class TwitterMainComponent extends Component {
           <Link className="router-link" to='/twitter/HashTags'>HashTags</Link>
           <Link className="router-link" to='/twitter/Collections'>Collections</Link>
             <div>
+                <Route exact path={this.props.match.path} component={TwitterHashTagsComponent} />
                 <Route path={`${this.props.match.path}/trends`} component={TwitterTrendsComponent} />
                 <Route path={`${this.props.match.path}/HashTags`} component={TwitterHashTagsComponent} />
                 <Route path={`${this.props.match.path}/Collections`} component={TwitterCollectionsComponent} />
